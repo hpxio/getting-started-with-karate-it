@@ -1,8 +1,8 @@
-rootProject.name = "gradle-multi-module-template"
+rootProject.name = "getting-started-with-karate-it"
 
-include("gradle-multi-module-template-app")
-include("gradle-multi-module-template-uat")
-include("gradle-multi-module-template-client")
+include("getting-started-with-karate-it-app")
+include("getting-started-with-karate-it-uat")
+include("getting-started-with-karate-it-client")
 
 pluginManagement {
     val spotlessVersion: String by settings

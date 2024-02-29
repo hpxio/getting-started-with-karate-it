@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GradleMultiModuleTemplateAppApplication {
+public class GettingStartedWithKarateITApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(GradleMultiModuleTemplateAppApplication.class, args);
+        SpringApplication.run(GettingStartedWithKarateITApp.class, args);
     }
 }

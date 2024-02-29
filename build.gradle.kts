@@ -10,8 +10,8 @@ plugins {
 
 /* instruct jacoco to include given sub-modules for coverage report */
 dependencies {
-	jacocoAggregation(project(":gradle-multi-module-template-app"))
-	jacocoAggregation(project(":gradle-multi-module-template-client"))
+	jacocoAggregation(project(":getting-started-with-karate-it-app"))
+	jacocoAggregation(project(":getting-started-with-karate-it-client"))
 }
 
 group = "com.app.hpx"
@@ -70,10 +70,15 @@ subprojects {
 }
 
 /* enable jar generation for app module */
-project(":gradle-multi-module-template-app") {
+project(":getting-started-with-karate-it-app") {
 	tasks.jar {enabled = true }
 	tasks.bootJar { enabled = true }
 	tasks.bootRun { enabled = true }
+}
+
+/* disable UAT running by default with build */
+project(":getting-started-with-karate-it-uat") {
+	tasks.test { enabled = false }
 }
 
 /* report is always generated after tests run */
